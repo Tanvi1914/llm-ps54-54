@@ -2,9 +2,11 @@
 
 import os
 import gradio as gr
+from dotenv import load_dotenv
 from google import genai
 from google.genai import types
 
+load_dotenv()
 # Set GEMINI_API_KEY in your environment before running this application.
 api_key = os.getenv("GEMINI_API_KEY")
 if not api_key:
